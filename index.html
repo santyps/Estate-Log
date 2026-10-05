@@ -2,27 +2,34 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>Estate Daily Logger</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <title>Estate Daily Logger Mobile Puncher</title>
 
-  <!-- iOS Home Screen Icon -->
+  <!-- iOS Home Screen Icons -->
   <link rel="apple-touch-icon" href="https://i.ibb.co/Qjh94vXh/BD2-B218-B-E717-43-DC-905-C-A0-AD466640-F1.png">
   <link rel="apple-touch-icon-precomposed" href="https://i.ibb.co/Qjh94vXh/BD2-B218-B-E717-43-DC-905-C-A0-AD466640-F1.png">
-  <link rel="icon" type="image/png" href="https://i.ibb.co/Qjh94vXh/BD2-B218-B-E717-43-DC-905-C-A0-AD466640-F1.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="https://i.ibb.co/Qjh94vXh/BD2-B218-B-E717-43-DC-905-C-A0-AD466640-F1.png">
 
   <!-- iOS Standalone Web App Mode -->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
   <meta name="apple-mobile-web-app-title" content="Estate Log">
+  <meta name="mobile-web-app-capable" content="yes">
 
   <style>
+    * {
+      box-sizing: border-box;
+      -webkit-tap-highlight-color: transparent;
+    }
     html, body {
       margin: 0;
       padding: 0;
       width: 100%;
       height: 100dvh;
+      height: 100vh;
       overflow: hidden;
       background: #f1f5f9;
+      position: fixed; /* Prevents unwanted bounce scrolling in iOS wrapper */
     }
     iframe {
       width: 100%;
@@ -34,8 +41,9 @@
 </head>
 <body>
   <iframe 
-    src="https://script.google.com/macros/s/AKfycbxjL1SLFg1OEAEy1LQ6y_8_x5WQv3tIjMcQerg2Wej5ZITmQ6n1xo43bkwY1fFPhM2E/exec" 
-    allow="clipboard-read; clipboard-write">
+    src="https://script.google.com/macros/s/AKfycbzEH-LikxRPTJO3E-Si2zKQSPR3Rma2-eyiuzToZvjo0y5miCUFAkKDqR-UySNTsTmh/exec" 
+    allow="clipboard-read; clipboard-write; web-share"
+    loading="eager">
   </iframe>
 </body>
 </html>
